@@ -17,34 +17,72 @@
 
     <p>Email</p>
     <div class="input-div">
-      
-      <input type="text" id="inp" placeholder="Enter Email id" id="input" onfocus="focusTime()">
-    </div>
-    
-    
-    <p>Password</p>
-    
-    <div class="input-div">
-      <input  type="password" id="pass" placeholder="Enter Password" id="input" onblur="blurTime()" >
-      <i id="icon" onclick="iconTrigerShow()"  class="fa-regular fa-eye"></i>
-    </div>
 
-    
+      <input type="email" id="inp" placeholder="Enter Email Id ..." onblur="blurTimeOut(this)"
+        onfocus="focusTime(this)">
+    </div>
+    <p id="massege"></p>
+
+
+    <p>Password</p>
+
+    <div class="input-div">
+      <input type="password" id="pass" placeholder="Enter Password ..." onfocus="focusPassword(this)"
+        onblur="blurPassword(this)">
+
+      <i id="icon" onclick="iconTrigerShow(this)" class="fa-solid fa-eye-low-vision"></i>
+
+    </div>
+    <p id="passwordMassege"></p>
+
     <button onclick="success()">Submit</button>
+    <div class="login">
+
+      <a href="">Forgotten Account</a>
+      <a href="./signUp.html"> Sign up for log-in</a>
+
+    </div>
   </div>
 
-  
+
+  </script>
+
+
 
   <!-- <i class="fa-solid fa-eye"></i> -->
+
+
   <!-- -------------------------------------------- Form Html code End-----------------------------------------------// -->
 
 
 
 
 
+  <!-- -------------------------------------------- Picture Trigger Practice HTML code Start-----------------------------------------------// -->
+
+  <!-- <img
+      src="./image/kim 1.gif"
+      width="250px"
+      height="350px"
+      onmouseover="imgHandler('in' ,this)"
+      onmouseout="imgHandler('out' ,this)"
+      id="kimImage"
+      alt=""
+    /> 
+
+    <img
+    src="./image/terry 1.gif"
+    width="250px"
+    height="350px"
+    onmouseover="imgHandler2('in' ,this)"
+    onmouseout="imgHandler2('out' ,this)"
+    id="terryImage"
+    alt=""
+  />  -->
 
 
 
+  <!-- -------------------------------------------- Picture Trigger Practice HTML code End-----------------------------------------------// -->
 
 
 

@@ -3,68 +3,130 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* ----------------- Form Style Start-------------- */
 body {
     width: 100%;
     height: 100vh;
-    background-color: bisque;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
 }
 
 .container {
 
     max-width: 35%;
-    background-color: white;
+    background-color: rgb(95, 83, 83);
     margin: 0 auto;
     margin-top: 200px;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 10px;
-    
+
 }
-
-.input-div{
-    border: 3px solid #8d8989;
-    border-radius: 5px;
-    width: 80%;
-    font-size: 25px;
-    padding: 20px;
-    display: block;
-    margin: 20px auto;
-    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
-
+.container .input-div{
+    position: relative;
 }
 .container input {
-border: none;
-outline: none;    
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;  
+} 
+
+.fa-eye-low-vision , .fa-solid {
+    position: absolute;
+    right: 13px;
+    top: 23px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#passwordMassege{
+    color: rgb(209, 33, 33);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#massege{
+    color: rgb(209, 33, 33);
+    font-size: 14px;
+    font-weight: bold;
 
 }
 
-p{
-    font-size: 25px;
-    margin-left: 73px;
+.container p {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-input::placeholder {
-    font-size: 16px;
-}
-.fa-regular , .fa-solid {
-float: right;
-}
 
 .container button {
-    color: white;
-    border: 1px solid #1877f2;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(43, 43, 150);
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
     outline: none;
-    border-radius: 10px;
-    width: 80%;
-    font-size: 25px;
-    padding: 20px;
     display: block;
     margin: 20px auto;
-    box-shadow: rgba(24, 119, 242, 0.5) 0px 2px 8px 0px;
-    background: #1877f2;
-
+    cursor: pointer;
 }
+
+.container input::placeholder {
+    font-size: 16px;
+}
+
+.login {
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.login a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.home{
+    color: red;
+    text-decoration: none;
+    text-align:left ;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
 
 
 /* ----------------- Form Style End-------------- */
+
+/* ----------------- Picture Trigger Practice CSS code Start-------------- */
+
+
+/* body {
+    background-image: url(./image/background\ image.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#kimImage {
+    margin-top: 400px;
+    margin-left: 200px;
+}
+
+#terryImage{
+    float: right;
+    margin-top: 400px;
+    margin-right: 200px;
+} */
