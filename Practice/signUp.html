@@ -15,65 +15,72 @@
 <body>
 
     <div class="form-container">
-        <form action="">
-            <h2>Registration Form</h2>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" required placeholder="Enter Name">
-            </div>
 
-            <div>
-                <label for="fname">F.Name</label>
-                <input type="text" id="fname" required placeholder="Enter F.Name">
-            </div>
+        <h2>Registration Form</h2>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" autocomplete="off" required placeholder="Enter Name"
+                onblur="validationInput('name' , this)">
+        </div>
 
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="number" id="phone" required placeholder="Enter Phone Number">
-            </div>
+        <div>
+            <label for="fname">F.Name</label>
+            <input type="text" id="fname" autocomplete="off" required placeholder="Enter F.Name"
+                onblur="validationInput('fname' , this)">
+        </div>
 
-            <div>
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" required>
-            </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" autocomplete="off" required placeholder="Enter Phone Number"
+                onblur="validationInput('phone' , this)">
+        </div>
 
-            <div>
-                <label for="address">Address</label>
-                <input type="text" id="address" required placeholder="Enter Address">
-            </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required onblur="validationInput('dob' , this)">
+        </div>
 
-            <div>
-                <label for="city">City</label>
-                <input type="text" id="city" required placeholder="Enter City Name">
-            </div>
+        <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" autocomplete="off" required placeholder="Enter Address"
+                onblur="validationInput('address' , this)">
+        </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" onfocus="focusEmail(this)" onblur="blurEmail(this)"
-                    placeholder="Enter Email Id">
-                <p id="sign-up-para"></p>
-            </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" autocomplete="off" required placeholder="Enter City Name"
+                onblur="validationInput('city' , this)">
+        </div>
 
-            <div class="pass-div">
-                <label for="password">Password</label>
-                <input type="password" id="password" onfocus="signupPassword(this)" onblur="signupPasswordBlur(this)"
-                    placeholder="Enter Password">
-                <i id="icon" onclick="iconTrigerShow(this)" class="fa-solid fa-eye-low-vision"></i>
-                <p id="sign-up-para-password"></p>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="off" onfocus="signUpfocusEmail('signUpEmailFocus' , this)"
+                onblur="signUpblurEmail('signUpEmailBlur' , this)" placeholder="Enter Email Id">
+            <p id="sign-up-para"></p>
+        </div>
 
-            </div>
+        <div class="pass-div">
 
-            <div>
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" placeholder="Confirm Password">
-            </div>
+            <label for="password">Password</label>
+            <input type="password" id="password" autocomplete="off"
+                onfocus="signupPasswordFocus('signUpPasswordFocus' , this)"
+                onblur="signupPasswordBlur('signUpPasswordBlur' ,this)" placeholder="Enter Password">
+            <i id="icon" onclick="iconTrigerShow(this)" class="fa-solid fa-eye-low-vision"></i>
 
-            <a id="acher" href="./successfully .html">
+            <p id="sign-up-para-password"></p>
 
-                <button onclick="signupSubmit()" type="submit">Submit</button>
-            </a>
-        </form>
+        </div>
+
+        <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" autocomplete="off" id="confirm-password" placeholder="Confirm Password">
+        </div>
+
+        <button onclick="signupSubmit()" type="submit">Submit</button>
+
+
     </div>
+
 
 
 </body>

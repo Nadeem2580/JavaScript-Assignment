@@ -1,51 +1,95 @@
-var getInput = document.getElementById("inp");
-var getPass = document.getElementById("pass");
-var getPara = document.getElementById("massege");
-var getpassMassage = document.getElementById("passwordMassege");
-
-
-
-function focusTime(focusEle) {
-    getPara.style.display = "none"
-    getInput.style.border = "3px solid black";
-    getInput.style.outline = "none";
-
-}
-
-function blurTimeOut(blurEle) {
-    if (getInput.value === "") {
-        getInput.style.border = "2px solid red";
-        getInput.style.outline = "none";
-        getPara.style.display = "block"
-        getPara.innerHTML = "Please Enter Email !"
-
-    } else if (getInput.value.length < 3) {
-        getInput.style.border = "2px solid red";
-        getInput.style.outline = "none";
-        getPara.style.display = "block"
-        getPara.innerHTML = "Enter Valid Email !"
+function validationInput(flag, ele) {
+    if (flag == "name" && ele.value == "") {
+        alert("Enter Name")
+    }
+    else if (flag == "fname" && ele.value == "") {
+        alert("Enter Father Name")
+    }
+    else if (flag == "phone" && ele.value == "") {
+        alert("Enter Phone  Number")
+    }
+    else if (flag == "dob" && ele.value == "") {
+        alert("Enter DOB Name")
+    }
+    else if (flag == "address" && ele.value == "") {
+        alert("Enter address Name")
+    }
+    else if (flag == "city" && ele.value == "") {
+        alert("Enter city Name")
     }
 }
 
 
-function focusPassword() {
-    getpassMassage.style.display = "none"
-    getPass.style.border = "3px solid black";
-    getPass.style.outline = "none";
+function signUpfocusEmail(flag, focusEle) {
+    var signUpPara = document.getElementById("sign-up-para")
+    var signupEmail = document.getElementById("email")
+
+    if (flag == "signUpEmailFocus") {
+        signUpPara.style.display = "none"
+        focusEle.style.border = "2px solid black";
+        focusEle.style.outline = "none"
+    }
+
 }
 
+function signUpblurEmail(flag, signblurUpVar) {
+    var signUpPara = document.getElementById("sign-up-para")
+    var signupEmail = document.getElementById("email")
 
-function blurPassword() {
-    if (getPass.value.length < 8) {
-        getPass.style.border = "2px solid red";
-        getPass.style.outline = "none";
-        getpassMassage.style.display = "block";
-        getpassMassage.innerHTML = "Enter atleast 8 character"
+    if (flag == "signUpEmailBlur") {
+
+        if (signupEmail.value == "") {
+            signblurUpVar.style.border = "1px solid red";
+            signblurUpVar.style.outline = "none";
+            signUpPara.style.display = "block";
+            signUpPara.innerHTML = "Please Enter Email";
+        } else if (signblurUpVar.value.length < 3) {
+            signblurUpVar.style.border = "2px solid red";
+            signblurUpVar.style.outline = "none";
+            signUpPara.style.display = "block";
+            signUpPara.innerHTML = "Please Enter valid Email";
+        }
+    }
+}
+
+function signupPasswordFocus(flag, signUppassFocusEle) {
+    var signUpParaPassword = document.getElementById("sign-up-para-password");
+
+    if (flag == "signUpPasswordFocus") {
+        signUpParaPassword.style.display = "none"
+        signUppassFocusEle.style.border = "2px solid black";
+        signUppassFocusEle.style.outline = "none"
 
     }
 }
+
+function signupPasswordBlur(flag, signUpblurPassVar) {
+    var signupPassw = document.getElementById("sign-up-para-password")
+
+    if (flag == "signUpPasswordBlur") {
+
+        if (signUpblurPassVar.value == "") {
+            signUpblurPassVar.style.border = "1px solid red";
+            signUpblurPassVar.style.outline = "none";
+            signupPassw.style.display = "block";
+            signupPassw.innerHTML = "Please Enter Password";
+            signupPassw.style.color = "red"
+
+        } else if (signUpblurPassVar.value.length < 5) {
+            signUpblurPassVar.style.border = "2px solid red";
+            signUpblurPassVar.style.outline = "none";
+            signupPassw.style.display = "block";
+            signupPassw.innerHTML = "Please Enter valid Password";
+            signupPassw.style.color = "red"
+        }
+    }
+}
+
+
 
 function iconTrigerShow(getIcon) {
+    var getPass = document.getElementById("password");
+
     if (getPass.type == "password") {
         getPass.type = "text"
         getIcon.className = "fa-solid fa-eye"
@@ -55,106 +99,98 @@ function iconTrigerShow(getIcon) {
     }
 }
 
-function focusEmail(focusInp) {
-    var signUpPara = document.getElementById("sign-up-para")
-    signUpPara.style.display = "none"
-    focusInp.style.border = "2px solid black";
-    focusInp.style.outline = "none";
-}
-
-function blurEmail(blurInp) {
-    var signUpPara = document.getElementById("sign-up-para")
-
-    if (blurInp.value === "") {
-        blurInp.style.border = "2px solid red";
-        blurInp.style.outline = "none";
-        signUpPara.style.display = "block"
-        signUpPara.innerHTML = "Please Enter Email !"
-
-    } else if (blurInp.value.length < 3) {
-        blurInp.style.border = "2px solid red";
-        blurInp.style.outline = "none";
-        signUpPara.style.display = "block"
-        signUpPara.innerHTML = "Enter Valid Email !"
-    }
-}
-
-function signupPassword(passSignup) {
-    var getPassMassage = document.getElementById("sign-up-para-password")
-    getPassMassage.style.display = "none"
-    passSignup.style.border = "3px solid black";
-    passSignup.style.outline = "none";
-}
-
-function signupPasswordBlur(paasSignupBlur) {
-    if (paasSignupBlur.value.length < 8) {
-        paasSignupBlur.style.border = "2px solid red";
-        paasSignupBlur.style.outline = "none";
-        paasSignupBlurMassage.style.display = "block";
-        paasSignupBlurMassage.innerHTML = "Enter atleast 8 character"
-
-    }
-}
-
-
-function iconTrigerShow(getIcon) {
-    var pass = document.getElementById("password")
-    if (pass.type == "password") {
-        pass.type = "text"
-        getIcon.className = "fa-solid fa-eye"
-    } else {
-        pass.type = "password"
-        getIcon.className = "fa-solid fa-eye-low-vision"
-    }
-}
-
-
 function signupSubmit() {
     var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    // var name = document.getElementById("name");
-    // var fname = document.getElementById("fname");
-    // var phone = document.getElementById("phone");
-    // var dob = document.getElementById("dob");
-    // var address = document.getElementById("address");
-    // var city = document.getElementById("city");
-    // var confirmPassword = document.getElementById("confirm-password");
-    // var acher = document.getElementById("acher");
+    var pass = document.getElementById("password").value;
+    localStorage.setItem("Email", email);
+    localStorage.setItem("Password", pass);
+    alert("You have successfully signed up!");
+    location.href = "index.html";
+}
 
-    if (email == "nadeem@gmail.com" && password == 123456789) {
+// --------------------Log in Form ------------------//
 
+
+
+function focusTime(ele) {
+    var signUpPara = document.getElementById("massege");
+    signUpPara.style.display = "none"
+    ele.style.border = "2px solid black";
+    ele.style.outline = "none"
+}
+function blurTimeOut(ele) {
+    var signUpPara = document.getElementById("massege");
+
+    if (ele.value == "") {
+        ele.style.border = "1px solid red";
+        ele.style.outline = "none";
+        signUpPara.style.display = "block";
+        signUpPara.innerHTML = "Please Enter Email";
+    } else if (ele.value.length < 3) {
+        ele.style.border = "2px solid red";
+        ele.style.outline = "none";
+        signUpPara.style.display = "block";
+        signUpPara.innerHTML = "Please Enter valid Email";
     }
+}
+
+function focusPassword(flag) {
+    var passwordMassege = document.getElementById("passwordMassege");
 
 
+    passwordMassege.style.display = "none"
+    flag.style.border = "2px solid black";
+    flag.style.outline = "none"
+}
 
+function blurPassword(flag) {
+    var passwordMassege = document.getElementById("passwordMassege")
 
+    if (flag.value == "") {
+        flag.style.border = "1px solid red";
+        flag.style.outline = "none";
+        passwordMassege.style.display = "block";
+        passwordMassege.innerHTML = "Please Enter Password";
+        passwordMassege.style.color = "red"
 
+    } else if (flag.value.length < 5) {
+        flag.style.border = "2px solid red";
+        flag.style.outline = "none";
+        passwordMassege.style.display = "block";
+        passwordMassege.innerHTML = "Please Enter valid Password";
+        passwordMassege.style.color = "red"
+    }
 
 }
 
+function success() {
+    var email = document.getElementById("inEmail").value;
+    var pass = document.getElementById("inPass").value;
+    var localEmail = localStorage.getItem("Email");
+    var localPassword = localStorage.getItem("Password");
 
+    if (email == "") {
+        alert("Enter Email")
+    } else if (pass == "") {
+        alert("Enter Password")
 
+    } else if (email == localEmail && pass == localPassword) {
+        location.href = "successfully .html";
+    }
 
+}
 
+function iconTrigerHide(ele){
+    var getPass = document.getElementById("inPass")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if (getPass.type == "password") {
+        getPass.type = "text"
+        ele.className = "fa-solid fa-eye"
+    } else {
+        getPass.type = "password"
+        ele.className = "fa-solid fa-eye-low-vision"
+    }
+}
 
 
 
