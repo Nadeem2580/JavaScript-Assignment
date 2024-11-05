@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor Java Script</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="contianer">
+        <div class="btn-div">
+            <i class="fa-solid fa-align-left" onclick="textStyleEditor('left')"></i>
+            <i onclick="textStyleEditor('center')" class="fa-solid fa-align-center"></i>
+            <i onclick="textStyleEditor('right')" class="fa-solid fa-align-right"></i>
+            <i onclick="textStyleEditor('bold')" class="fa-solid fa-bold" id="boldtext"></i>
+            <i onclick="textStyleEditor('italic')" class="fa-solid fa-italic" id="italicText"></i>
+            <i onclick="textStyleEditor('underline')" class="fa-solid fa-underline" id="underlineText"></i>
+
+            <button onclick="plus('addition' , this)"  class="btn">+</button>
+            <button disabled  class="btn" id="textCount">16</button>
+            <button onclick="plus('minus' , this)" class="btn">-</button>
+
+            <input oninput="colorChange(this)" type="color" id="color">
+        </div>
+
+        <div>
+            <div class="output textnorml textNupe textUnderlineNon" id="output" contenteditable="true"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
