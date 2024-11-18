@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(90deg ,#cf61dafd , #3d3d37b4 ,#b6695cd2); */
+    background: rgb(204, 199, 199);
+}
+.Notes-App {
+
+    box-shadow: rgb(17, 16, 15) 0px 30px 60px -12px inset, rgb(20, 15, 15) 0px 18px 36px -18px inset;
+    padding: 1px 0 40px 0;
+    border-radius: 5px;
+}
+
+.Notes-App h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.input-border {
+    /* border: 1px solid #f00; */
+    border-radius: 20px;
+    position: relative;
+}
+
+.form-control {
+    /* position: relative; */
+    border-radius: 20px;
+    padding-right: -30px;
+    padding-right: 110px !important;
+
+}
+
+.add {
+    position: absolute;
+    right: 0;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f10707b4, purple);
+    outline: none;
+    color: white;
+    border: 2px solid #7a7860b4;
+    cursor: pointer;
+}
+
+.add:hover {
+    background: linear-gradient(to right, #145002d2, #3d3d37b4);
+}
+
+
+.card {
+    margin: 15px 30px 0 30px;
+    border-radius: 10px;
+    box-shadow: 0 0px 3px black;
+    transition: transform 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* white-space: pre-wrap; */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.card-body i {
+    border: none;
+    background-color: transparent;
+    color: red;
+    margin: 3px;
+    font-size: 10px;
+}
+
+.card-body i:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+.cards-texts {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-footer{
+    height: 30px;
+    font-weight: bold;
+    padding: 0;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-right:5px ;
+}
