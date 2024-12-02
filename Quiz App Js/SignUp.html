@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Registration Form</h2>
+        <form onsubmit="return data()" action="index.html">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" autocomplete="off"  placeholder="Enter Name" onkeyup="namevalidation( 'first',this)">
+            </div>
+
+            <div>
+                <label for="fname">Last Name</label>
+                <input type="text" id="lName" autocomplete="off"  placeholder="Enter F.Name" onkeyup="namevalidation('last' ,this)">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" autocomplete="off"  placeholder="Enter 10 digit Number" onkeyup="numbervalidation(this)">
+            </div>
+
+
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" placeholder="Enter Email Id" onkeyup="emailvalidation(this)">
+                <p id="sign-up-para"></p>
+            </div>
+
+            <div class="pass-div">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" autocomplete="off" placeholder="Enter Password" onkeyup="passValidation(this)">
+                <i id="icon" onclick="toggleFunc()" class="fa-solid fa-eye-low-vision"></i>
+
+                <p id="sign-up-para-password"></p>
+
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" autocomplete="off" id="confirm-password" placeholder="Confirm Password" onkeyup="cPass(this)">
+            </div>
+
+            <input type="submit" id="submitBTn" value="Submit your data">
+        </form>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #250057;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    box-shadow: 0 0 10px white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 10px auto;
+    border-bottom: 3px solid white;
+    width: 50%;
+}
+
+.input-group label {
+    color: white;
+    margin: 20px 0;
+}
+
+.input-group input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+#togglePassword {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#loginSubmitBtn {
+    background-color: rgb(2, 5, 53);
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+
+}
+
+#submitBtn:hover , #createAccountBtn:hover  {
+    background-color: rgb(18, 33, 66);
+cursor: pointer;
+}
+
+#createAccountBtn {
+    background-color: rgb(2, 5, 53);
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+
+}

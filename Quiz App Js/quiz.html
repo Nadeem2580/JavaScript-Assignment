@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APPLICAATION JAVA SCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="ShowQuisUI()">
+   <div id="quizContaine">
+    <header class="">
+        <div class="container">
+            <div> <h1 class="userName"></h1></div>
+            <div>
+                <h1>Quiz Java Script</h1>
+
+            </div>
+            <p id="minute">0</p>
+            
+              </div>
+              
+              
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="quiz-container">
+            <div class="quiz-box">
+                <h2 id="question">Question goes here</h2>
+                <div class="options">
+                </div>
+                <div class="quiz-footer">
+                    <button onclick="nextQuestion()" id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <button onclick="openPopup()"  id="submitBtn" class="btn">Submit Quiz</button>
+        </div>
+    </footer>
+
+   </div> 
+    
+
+    <div class="tick-containe">
+        <div class="popup" id="popup">
+            <img src="./WhatsApp Image 2024-11-29 at 19.57.17_d7ad3668.jpg" alt="">
+            <h2>Thank you!</h2>
+            <p class="scored"> </p>
+            <p class="correct"></p>
+            <p class="wrong"></p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

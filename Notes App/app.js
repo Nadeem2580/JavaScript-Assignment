@@ -18,10 +18,10 @@ function addNotes() {
         notesTime: currentTime
     }
     if (getNotes == null) {
-        let tempArr = [noteObject];
+        var tempArr = [noteObject];
         localStorage.setItem("notes", JSON.stringify(tempArr));
     } else {
-        let tempArr = JSON.parse(getNotes)
+        var tempArr = JSON.parse(getNotes)
         tempArr.unshift(noteObject)
         localStorage.setItem("notes", JSON.stringify(tempArr))
     }
