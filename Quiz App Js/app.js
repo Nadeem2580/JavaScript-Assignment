@@ -461,7 +461,7 @@ function MatchEmail(event) {
     }
     if (isMatchFound) {
         window.location.replace("./quiz.html");
-        window.history.back()
+        // window.history.back()
         
     } else {
         alert("Email and password do not match.");
@@ -478,7 +478,7 @@ function openPopup() {
     var PopupContainer = document.querySelector(".tick-containe");
     PopupContainer.style.display = "block"
     popup.classList.add("open-popup");
-    scored.innerHTML = `Congratulation You are Passed with ${score} score`;
+    scored.innerHTML = `Congratulation You have scored  ${score} form correct answer`;
     correct.innerHTML = `You have submitted ${correctAns} correct answers`
     wrong.innerHTML = `You have submitted ${wrongAns} Wrong answers`
 
