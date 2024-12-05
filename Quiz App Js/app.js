@@ -246,6 +246,8 @@ function ShowQuisUI() {
     }
     submitBtn.style.opacity = "0.5";
     submitBtn.setAttribute("disabled", true);
+    nextBtn.style.opacity = "0.5";
+    nextBtn.setAttribute("disabled", true);
 
 }
 
@@ -306,8 +308,12 @@ function disableFunc() {
     var alloptions = document.querySelectorAll("input");
     alloptions.forEach((ele) => {
         ele.disabled = true
+        nextBtn.style.opacity = "unset";
+        nextBtn.removeAttribute("disabled");
 
     })
+    
+
 }
 
 
