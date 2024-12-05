@@ -95,138 +95,138 @@ const quizQuestions = [
         ],
         correctAnswer: "A) true"
     },
-    // {
-    //     id: 8,
-    //     question: "9) What does the `this` keyword refer to in JavaScript?",
-    //     answerChoices: [
-    //         "A) The current function",
-    //         "B) The global object",
-    //         "C) The object that is executing the current code",
-    //         "D) The function's arguments"
-    //     ],
-    //     correctAnswer: "C) The object that is executing the current code"
-    // },
-    // {
-    //     id: 9,
-    //     question: "10) Which of the following is the correct syntax for declaring an array in JavaScript?",
-    //     answerChoices: [
-    //         "A) var arr = []",
-    //         "B) var arr = ()",
-    //         "C) var arr = {}",
-    //         "D) var arr = < >"
-    //     ],
-    //     correctAnswer: "A) var arr = []"
-    // },
-    // {
-    //     id: 10,
-    //     question: "11) What is the purpose of the `push()` method in JavaScript?",
-    //     answerChoices: [
-    //         "A) To add an item to the end of an array",
-    //         "B) To remove an item from the array",
-    //         "C) To convert a string to a number",
-    //         "D) To concatenate two arrays"
-    //     ],
-    //     correctAnswer: "A) To add an item to the end of an array"
-    // },
-    // {
-    //     id: 11,
-    //     question: "12) What will be the output of the following code? console.log(0 == false);",
-    //     answerChoices: [
-    //         "A) true",
-    //         "B) false",
-    //         "C) undefined",
-    //         "D) NaN"
-    //     ],
-    //     correctAnswer: "A) true"
-    // },
-    // {
-    //     id: 12,
-    //     question: "13) How do you check if a variable `x` is an array in JavaScript?",
-    //     answerChoices: [
-    //         "A) Array.isArray(x)",
-    //         "B) x instanceof Array",
-    //         "C) typeof x === 'array'",
-    //         "D) Both A and B"
-    //     ],
-    //     correctAnswer: "D) Both A and B"
-    // },
-    // {
-    //     id: 13,
-    //     question: "14) What is a closure in JavaScript?",
-    //     answerChoices: [
-    //         "A) A function that is called after a delay",
-    //         "B) A function that is created inside another function and has access to the outer function's variables",
-    //         "C) A function that is passed as an argument to another function",
-    //         "D) A function that returns another function"
-    //     ],
-    //     correctAnswer: "B) A function that is created inside another function and has access to the outer function's variables"
-    // },
-    // {
-    //     id: 14,
-    //     question: "15) What does `NaN` stand for in JavaScript?",
-    //     answerChoices: [
-    //         "A) Not a Number",
-    //         "B) Null and Null",
-    //         "C) Not available Number",
-    //         "D) Not a Null"
-    //     ],
-    //     correctAnswer: "A) Not a Number"
-    // },
-    // {
-    //     id: 15,
-    //     question: "16) What does the `typeof` operator do in JavaScript?",
-    //     answerChoices: [
-    //         "A) Returns the type of an object",
-    //         "B) Returns the length of an array",
-    //         "C) Returns the type of a variable",
-    //         "D) Checks if a variable is undefined"
-    //     ],
-    //     correctAnswer: "C) Returns the type of a variable"
-    // },
-    // {
-    //     id: 16,
-    //     question: "17) How do you declare a constant in JavaScript?",
-    //     answerChoices: [
-    //         "A) var",
-    //         "B) let",
-    //         "C) const",
-    //         "D) static"
-    //     ],
-    //     correctAnswer: "C) const"
-    // },
-    // {
-    //     id: 17,
-    //     question: "18) Which method is used to remove the last item of an array?",
-    //     answerChoices: [
-    //         "A) pop()",
-    //         "B) shift()",
-    //         "C) remove()",
-    //         "D) delete()"
-    //     ],
-    //     correctAnswer: "A) pop()"
-    // },
-    // {
-    //     id: 18,
-    //     question: "19) What does the `setTimeout()` function do in JavaScript?",
-    //     answerChoices: [
-    //         "A) It executes a function after a specified number of milliseconds",
-    //         "B) It executes a function immediately",
-    //         "C) It sets the timeout for a page to reload",
-    //         "D) It stops a function from executing"
-    //     ],
-    //     correctAnswer: "A) It executes a function after a specified number of milliseconds"
-    // },
-    // {
-    //     id: 19,
-    //     question: "20) Which of the following is used to handle errors in JavaScript?",
-    //     answerChoices: [
-    //         "A) catch",
-    //         "B) throw",
-    //         "C) try",
-    //         "D) All of the above"
-    //     ],
-    //     correctAnswer: "D) All of the above"
-    // }
+    {
+        id: 8,
+        question: "9) What does the `this` keyword refer to in JavaScript?",
+        answerChoices: [
+            "A) The current function",
+            "B) The global object",
+            "C) The object that is executing the current code",
+            "D) The function's arguments"
+        ],
+        correctAnswer: "C) The object that is executing the current code"
+    },
+    {
+        id: 9,
+        question: "10) Which of the following is the correct syntax for declaring an array in JavaScript?",
+        answerChoices: [
+            "A) var arr = []",
+            "B) var arr = ()",
+            "C) var arr = {}",
+            "D) var arr = < >"
+        ],
+        correctAnswer: "A) var arr = []"
+    },
+    {
+        id: 10,
+        question: "11) What is the purpose of the `push()` method in JavaScript?",
+        answerChoices: [
+            "A) To add an item to the end of an array",
+            "B) To remove an item from the array",
+            "C) To convert a string to a number",
+            "D) To concatenate two arrays"
+        ],
+        correctAnswer: "A) To add an item to the end of an array"
+    },
+    {
+        id: 11,
+        question: "12) What will be the output of the following code? console.log(0 == false);",
+        answerChoices: [
+            "A) true",
+            "B) false",
+            "C) undefined",
+            "D) NaN"
+        ],
+        correctAnswer: "A) true"
+    },
+    {
+        id: 12,
+        question: "13) How do you check if a variable `x` is an array in JavaScript?",
+        answerChoices: [
+            "A) Array.isArray(x)",
+            "B) x instanceof Array",
+            "C) typeof x === 'array'",
+            "D) Both A and B"
+        ],
+        correctAnswer: "D) Both A and B"
+    },
+    {
+        id: 13,
+        question: "14) What is a closure in JavaScript?",
+        answerChoices: [
+            "A) A function that is called after a delay",
+            "B) A function that is created inside another function and has access to the outer function's variables",
+            "C) A function that is passed as an argument to another function",
+            "D) A function that returns another function"
+        ],
+        correctAnswer: "B) A function that is created inside another function and has access to the outer function's variables"
+    },
+    {
+        id: 14,
+        question: "15) What does `NaN` stand for in JavaScript?",
+        answerChoices: [
+            "A) Not a Number",
+            "B) Null and Null",
+            "C) Not available Number",
+            "D) Not a Null"
+        ],
+        correctAnswer: "A) Not a Number"
+    },
+    {
+        id: 15,
+        question: "16) What does the `typeof` operator do in JavaScript?",
+        answerChoices: [
+            "A) Returns the type of an object",
+            "B) Returns the length of an array",
+            "C) Returns the type of a variable",
+            "D) Checks if a variable is undefined"
+        ],
+        correctAnswer: "C) Returns the type of a variable"
+    },
+    {
+        id: 16,
+        question: "17) How do you declare a constant in JavaScript?",
+        answerChoices: [
+            "A) var",
+            "B) let",
+            "C) const",
+            "D) static"
+        ],
+        correctAnswer: "C) const"
+    },
+    {
+        id: 17,
+        question: "18) Which method is used to remove the last item of an array?",
+        answerChoices: [
+            "A) pop()",
+            "B) shift()",
+            "C) remove()",
+            "D) delete()"
+        ],
+        correctAnswer: "A) pop()"
+    },
+    {
+        id: 18,
+        question: "19) What does the `setTimeout()` function do in JavaScript?",
+        answerChoices: [
+            "A) It executes a function after a specified number of milliseconds",
+            "B) It executes a function immediately",
+            "C) It sets the timeout for a page to reload",
+            "D) It stops a function from executing"
+        ],
+        correctAnswer: "A) It executes a function after a specified number of milliseconds"
+    },
+    {
+        id: 19,
+        question: "20) Which of the following is used to handle errors in JavaScript?",
+        answerChoices: [
+            "A) catch",
+            "B) throw",
+            "C) try",
+            "D) All of the above"
+        ],
+        correctAnswer: "D) All of the above"
+    }
 ];
 
 
@@ -309,9 +309,6 @@ function disableFunc() {
 
     })
 }
-// function submitFunc() {
-//     openPopup()
-// }
 
 
 // --------------------- sign Up VAlidation ------------------
@@ -343,10 +340,6 @@ function localStoragehandle() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirm-password").value;
-    // var fullName = `${fNames} ${lName}`
-    // console.log(fullName)
-    // document.querySelector(".userName").innerHTML = fullName
-
 
     var obj = {
         firstName: fNames,
@@ -360,11 +353,7 @@ function localStoragehandle() {
     localStorage.setItem("users", JSON.stringify(usersArray));
 }
 
-// var CheckObj = localStorage.getItem("form");
-// if (CheckObj) {
-//     var tempArr = [];
-//     tempArr.unshift()
-// }
+
 
 function namevalidation(flag) {
     var fNames = document.getElementById("name").value;
@@ -471,7 +460,9 @@ function MatchEmail(event) {
         }
     }
     if (isMatchFound) {
-        window.location.href = "quiz.html";
+        window.location.replace("./quiz.html");
+        window.history.back()
+        
     } else {
         alert("Email and password do not match.");
     }
@@ -495,7 +486,9 @@ function openPopup() {
 
 function closePopup() {
     popup.classList.remove("open-popup");
-    window.location.href = "index.html";
+    window.location.replace("index.html");
+    window.history.back()
+    window.history.forward()
     var fullQuizContainer = document.getElementById("quizContaine");
     fullQuizContainer.style.display = "block"
 }
